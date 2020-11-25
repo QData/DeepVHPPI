@@ -1,2 +1,5 @@
-# MoTr
-Motif Transformers for Predicting Protein-Protein Interactions Between a Novel Virus and Humans
+**Motif Transformers for Predicting Protein-Protein Interactions Between a Novel Virus and Humans**<br/>
+Jack Lanchantin, Arshdeek Sekhon, Clint Miller, Yanjun Qi <br/>
+
+
+Code and data to be released soon!
