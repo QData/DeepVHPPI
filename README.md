@@ -1,4 +1,4 @@
-**Motif Transformers for Predicting Protein-Protein Interactions Between a Novel Virus and Humans**<br/>
+**Predicting Protein-Protein Interactions from Sequence using Transformers**<br/>
 Jack Lanchantin, Arshdeek Sekhon, Clint Miller, Yanjun Qi <br/>
 
 
