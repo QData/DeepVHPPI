@@ -4,12 +4,14 @@
 + 2021 ACM Conference on Bioinformatics, Computational Biology, and Health Informatics (ACM BCB)
 
 
-### PDF @ [BioArxiv](https://www.biorxiv.org/content/10.1101/2020.12.14.422772v2)
+### PDF
 
+- @[BioArxiv](https://www.biorxiv.org/content/10.1101/2020.12.14.422772v2)
+- @[ACM](https://dl.acm.org/doi/abs/10.1145/3459930.3469527)
 - GitHub [https://github.com/QData/DeepVHPPI](https://github.com/QData/DeepVHPPI)
 
 
-### Talk: [Slide]({{ site.baseurl }}/pic/semiPPI.pdf)
+### Talk: [Slide](https://docs.google.com/presentation/d/1LfSVsZ2hSy7F-AVXt1WIUfT2Qsw-db7VITZhmifAniQ/edit)
 
 
 ### Abstract
