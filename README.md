@@ -23,9 +23,9 @@ We propose DeepVHPPI, a novel deep learning framework combining a self-attention
 We make all of our data and code available on GitHub [https://github.com/QData/DeepVHPPI](https://github.com/QData/DeepVHPPI).
 
 
-[demo1](zmedia/deepVH2.png)
-[demo2](zmedia/deepVH3.png)
-[demo3](zmedia/deepVH4.png)
+![demo1](zmedia/deepVH2.png)
+![demo2](zmedia/deepVH3.png)
+![demo3](zmedia/deepVH4.png)
 
 
 ### Citations
