@@ -23,9 +23,9 @@ We propose DeepVHPPI, a novel deep learning framework combining a self-attention
 We make all of our data and code available on GitHub [https://github.com/QData/DeepVHPPI](https://github.com/QData/DeepVHPPI).
 
 
-![demo1]({{ site.baseurl }}/pic/deepVH2.png){:class="img-responsive"}
-![demo1]({{ site.baseurl }}/pic/deepVH3.png){:class="img-responsive"}
-![demo1]({{ site.baseurl }}/pic/deepVH4.png){:class="img-responsive"}
+[demo1](zmedia/deepVH2.png)
+[demo2](zmedia/deepVH3.png)
+[demo3](zmedia/deepVH4.png)
 
 
 ### Citations
@@ -46,6 +46,7 @@ We make all of our data and code available on GitHub [https://github.com/QData/D
 
 ```
 
+# How to run the code 
 
 **SARS-CoV-2 PPI**
 CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --data_root ./data/data/ -tr yang_ppi/train.json -va yang_ppi/test.json -te  HVPPI/test.json -v vocab.data -s 1024 -hs 512 -l 12  -o results  --lr 0.00001 --dropout 0.1 --epochs 200 --attn_heads 8 --activation 'gelu' --task biogrid  --emb_type 'conv' --overwrite  --batch_size 4 --grad_ac_steps 4
