@@ -46,19 +46,24 @@ We make all of our data and code available on GitHub [https://github.com/QData/D
 
 ```
 
+# How to get the data
+
+wget http://cs.virginia.edu/~jjl5sw/data/ppi/deepvhppi.tar.gz
+tar -xvf deepvhppi.tar.gz
+
 # How to run the code 
 
 **SARS-CoV-2 PPI**
-CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --data_root ./data/data/ -tr yang/train.json -va yang/test.json -te  HVPPI/test.json -v vocab.data -s 1024 -hs 512 -l 12  -o results  --lr 0.00001 --dropout 0.1 --epochs 200 --attn_heads 8 --activation 'gelu' --task biogrid  --emb_type 'conv' --overwrite  --batch_size 4 --grad_ac_steps 4
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --data_root ./data/ -tr yang/train.json -va yang/test.json -te  HVPPI/test.json -v vocab.data -s 1024 -hs 512 -l 12  -o results  --lr 0.00001 --dropout 0.1 --epochs 200 --attn_heads 8 --activation 'gelu' --task biogrid  --emb_type 'conv' --overwrite  --batch_size 4 --grad_ac_steps 4
 
 **ZHOU PPI**
-CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --data_root ./data/data/ -tr zhou/h1n1/human/train.json  -va zhou/h1n1/human/test.json -v vocab.data -s 1024 -hs 512 -l 12  -o results --lr 0.00001 --dropout 0.1 --epochs 20000 --attn_heads 8 --activation 'gelu' --task ppi --emb_type 'conv' --overwrite  --batch_size 8 --grad_ac_steps 2 --name '' 
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --data_root ./data/ -tr zhou/h1n1/human/train.json  -va zhou/h1n1/human/test.json -v vocab.data -s 1024 -hs 512 -l 12  -o results --lr 0.00001 --dropout 0.1 --epochs 20000 --attn_heads 8 --activation 'gelu' --task ppi --emb_type 'conv' --overwrite  --batch_size 8 --grad_ac_steps 2 --name '' 
 
 **BARMAN PPI**
-CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --data_root ./data/data/ -tr barman/train1.json  -va barman/test1.json -v vocab.data -s 1600 -hs 512 -l 12  -o results  --lr 0.00001 --dropout 0.1 --epochs 200 --attn_heads 8 --activation 'gelu' --task ppi  --emb_type 'conv' --overwrite  --batch_size 4 --grad_ac_steps 4
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --data_root ./data/ -tr barman/train1.json  -va barman/test1.json -v vocab.data -s 1600 -hs 512 -l 12  -o results  --lr 0.00001 --dropout 0.1 --epochs 200 --attn_heads 8 --activation 'gelu' --task ppi  --emb_type 'conv' --overwrite  --batch_size 4 --grad_ac_steps 4
 
 **DeNovo SLIM PPI**
-CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --data_root ./data/data/ -tr denovo/train.json  -va denovo/test.json -v vocab.data -s 1024 -hs 512 -l 12  -o results --lr 0.00001 --dropout 0.1 --epochs 20000 --attn_heads 8 --activation 'gelu' --task ppi --emb_type 'conv' --overwrite  --batch_size 8 --grad_ac_steps 2 --name '' --saved_bert ./results/multi.bert.bsz_16.layers_12.size_512.heads_8.drop_10.lr_1e-05.saved_bert.torch/best_model.pt
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --data_root ./data/ -tr denovo/train.json  -va denovo/test.json -v vocab.data -s 1024 -hs 512 -l 12  -o results --lr 0.00001 --dropout 0.1 --epochs 20000 --attn_heads 8 --activation 'gelu' --task ppi --emb_type 'conv' --overwrite  --batch_size 8 --grad_ac_steps 2 --name '' --saved_bert ./results/multi.bert.bsz_16.layers_12.size_512.heads_8.drop_10.lr_1e-05.saved_bert.torch/best_model.pt
 
 
 
