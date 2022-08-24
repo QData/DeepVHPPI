@@ -48,7 +48,7 @@ We make all of our data and code available on GitHub [https://github.com/QData/D
 
 # How to get the data
 ```
-wget http://cs.virginia.edu/~jjl5sw/data/ppi/deepvhppi.tar.gz
+wget https://www.cs.virginia.edu/yanjun/jack/ppi/deepvhppi.tar.gz
 tar -xvf deepvhppi.tar.gz
 ```
 
